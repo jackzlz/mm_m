@@ -1,0 +1,24 @@
+<!-- 产品管理弹出层 -->
+<div class="panel panel-default appmsgdg-bd">
+	<div class="panel-heading appmsgdg-hd">
+		<form class="form-inline">
+			<div class="form-group appmsgsearch">
+				<label class="sr-only" for="keyword">keyword</label> <input type="text" class="form-control" id="appmsgSearchInput"
+					placeholder="标题/作者/摘要" style="width: 100%" />
+			</div>
+			<button type="button" id="appmsgSearchBtn" class="btn btn-primary" style="width: 104px">查询</button>
+			<!--<button type="button" class="btn btn-link pull-right appmsgcreate">新建图文消息</button>-->
+		</form>
+	</div>
+	<div class="panel-body appmsgdg-main">
+		<i class="icon_loading_small white js_loading" style="display: none;"></i>
+		<div id="appmsg-content"></div>
+	</div>
+	<div class="panel-footer appmsgdg-ft">
+		<div id="appmsg-pagebar" class="text-center"></div>
+		<div class="appmsgdg-ft-btn">
+			<button id="cancelButton" type="button" class="btn btn-default">取消</button>
+			<button id="okButton" type="button" class="btn btn-primary">确定</button>
+		</div>
+	</div>
+</div>

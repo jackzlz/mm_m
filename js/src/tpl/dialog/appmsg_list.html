@@ -1,0 +1,21 @@
+<!-- 产品管理弹出层-列表 --> 
+{@each data as it,index}
+<div class="col-xs-3 appmsg-item{@if it.selected} selected{@/if}" data-id="!{it.id}">
+	<div class="thumbnail appmsg-item-bd">
+		<h4 class="appmsg-title">
+			<a href="#">!{it.title}</a>
+		</h4>
+		<div class="appmsg-info">
+			<em class="appmsg-date">!{it.publishtimestr}</em>
+		</div>
+		<div class="appmsg-thumb-wrp">
+			<img src="!{it.thumb}" alt="..." class="img-responsive" data-id="!{it.cover}" />
+		</div>
+		<p class="appmsg-desc">!{it.abstracts}</p>
+		<div class="selected-mask">
+			<div class="appmsg-mask"></div>
+			<i class="icon-card-selected">已选择</i>
+		</div>
+	</div>
+</div>
+{@/each}

@@ -1,0 +1,16 @@
+<!-- 图片选择弹出层-列表 -->
+<div class="row img-list">
+	{@each data as img,index}
+	<div class="col-xs-2{@if img.selected} selected{@/if} img-item">
+		<div class="thumbnail img-item-bd">
+			<img src="!{img.imgurl}" alt="..." data-id="!{img.imgid}" data-name="!{img.imgname}" class="pic"> <span
+				class="imgname">!{img.imgname}</span>
+			<div class="selected-mask">
+				<div class="selected-mask-inner"></div>
+				<div class="selected-mask-icon"></div>
+			</div>
+			<div class="delete" data-filename="!{img.imgid}_!{img.imgname}" data-id="!{img.imgid}"></div>
+		</div>
+	</div>
+	{@/each}
+</div>

@@ -1,0 +1,1 @@
+define("biz/appmsg_show",[],function(a){var b="undefined"!=typeof getPreviewData&&getPreviewData()||appmsgData;$("#content").html(juicer("#show-content",b))});

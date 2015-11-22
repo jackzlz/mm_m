@@ -1,0 +1,44 @@
+{
+    // evn
+    "browser": true,
+    //"devel": true,
+    "jquery": true,
+    "mootools": true,
+
+    // global
+    "globals": {
+        "DP": false,
+        "exports": false,
+        "require": false,
+        "module": false,
+        "define": false,
+        "seajs": false
+    },
+    // grammar
+    "undef": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "trailing": true,
+    // "es5":true,
+    "scripturl": true,
+    "loopfunc": true,
+
+    // name
+    "camelcase": true,
+    "newcap": true,
+
+    // error
+    "unused": true,
+
+    // style
+    "curly": true,
+    "asi": true,
+    "immed": true,
+    "latedef": true,
+    "noarg": true,
+    "noempty": true,
+    "quotmark": "single",
+    "maxdepth": 20,
+    "boss": true,
+    "indent": 4
+}

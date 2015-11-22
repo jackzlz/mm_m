@@ -1,0 +1,18 @@
+<!-- 资讯选择弹出层-列表 -->
+{@each data as news,index}
+<div class="row news-item">
+	<div class="col-xs-1">
+		<div class="checkbox item-check">
+			<label> <input type="checkbox" data-id="!{news.id}" data-cover="!{news.cover}" id="!{news.id}"
+				value="!{news.id}" aria-label="选择" {@if news.selected==1}checked{@/if}>
+			</label>
+		</div>
+	</div>
+	<div class="col-xs-4">
+		<img src="!{news.imgurl}" />
+	</div>
+	<div class="col-xs-3 item-title">!{news.title}</div>
+	<div class="col-xs-2 item-publisher">!{news.publisher}</div>
+	<div class="col-xs-2 item-publishtimestr">!{news.publishtimestr}</div>
+</div>
+{@/each}

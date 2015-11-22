@@ -1,0 +1,30 @@
+.newsdg-bd {
+	border: none;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 0;
+	border-radius: 0;
+}
+.newsdg-bd .newscreate {
+	font-size: 16px;
+	font-weight: bold;
+}
+.newsdg-main{
+	overflow-y: auto;
+	height: 400px;
+}
+.news-item{
+	border-bottom: 1px solid #ddd;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor:pointer;
+}
+.news-item .item-title,
+.news-item .item-publisher,
+.news-item .item-publishtimestr {
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.news-ft{
+	padding-top:6px;
+	padding-bottom:6px;
+}

@@ -1,0 +1,19 @@
+<!-- 分页组件 -->
+<nav>
+	{@if isSimple}
+	<ul class="pager" style="margin: 0 0">
+		<li><a href="javascript:void(0);" data-index="previous">&laquo;</a></li>
+		<li><a href="javascript:void(0);" data-index="next">&raquo;</a></li>
+	</ul>
+	{@else}
+	<ul class="pagination" style="margin: 0 0">
+		<li class="page-prev"><a href="javascript:void(0);" aria-label="Previous" data-index="previous"> <span
+				aria-hidden="true">&laquo;</span>
+		</a></li> {@each i in range(1, pagecount+1)}
+		<li class="page-nav {@if i==1} active{@/if}"><a href="javascript:void(0);" data-index="!{i}">!{i}</a></li> {@/each}
+		<li class="page-next"><a href="javascript:void(0);" aria-label="Next" data-index="next"> <span
+				aria-hidden="true">&raquo;</span>
+		</a></li>
+	</ul>
+	{@/if}
+</nav>

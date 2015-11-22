@@ -1,0 +1,52 @@
+<!-- 产品管理编辑表单 -->
+{@if id != null}
+<input type="hidden" name="id" value="!{id}" />
+{@/if}
+<input type="hidden" name="productid" value="!{proid}" />
+<div class="form-group">
+	<label for="title">标题</label> <input type="text" class="form-control" id="title" name="title" placeholder="输入标题"
+		value="!{title}">
+</div>
+<div class="form-group">
+	<label for="author">作者（选填）</label> <input type="text" class="form-control" id="author" name="author" placeholder="输入作者"
+		value="!{author}">
+</div>
+<div class="form-group">
+	<label for="cover">封面</label>
+	<p>
+		<button type="button" class="btn btn-primary" id="selectCover">选择图片</button>
+	</p>
+	<div id="coverDiv">
+		{@if cover != null} <img id="cover" alt="封面" class="img-thumbnail"
+			src="/liontech/webApps/datastore/openSource.ds?uuid=!{cover}&accesspointtype=standardweb"
+			style="width: 268px; height: 268px;" data-id="!{cover}"> {@/if} <input type="hidden" name="cover"
+			value="!{cover}" />
+	</div>
+</div>
+<div class="checkbox">
+	<label> <input type="checkbox" name="top" id="top" value="0" {@iftop}checked{@/if}>置顶
+	</label>
+</div>
+<div class="form-group">
+	<label for="abstracts">摘要</label>
+	<textarea class="form-control" rows="3" id="abstracts" style="resize: none" name="abstracts">!{abstracts}</textarea>
+</div>
+<div class="form-inline">
+	<div class="form-group" style="margin-bottom: 15px">
+		<label for="vote">投票</label> <select class="form-control" id="vote" name="votecode"> {@each votes as
+			item,index}
+			<option value="!{item.paramKey}" {@if item.selected==1}selected{@/if}>!{item.paramMemo}</option> {@/each}
+		</select>
+	</div>
+	<div class="form-group" style="margin-bottom: 15px;" id="voteoption"></div>
+</div>
+<div class="row">
+	<div class="col-xs-2 protpl"></div>
+	<div class="col-xs-10">
+		<label for="content">正文</label>
+		<div class="container share-form-content">
+			<input type="hidden" name="content" />
+			<div id="js_editor" class="edui_editor_wrp"></div>
+		</div>
+	</div>
+</div>

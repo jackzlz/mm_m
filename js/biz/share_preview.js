@@ -1,0 +1,1 @@
+define("biz/share_preview",[],function(a){if("undefined"!=typeof getPreviewData){var b=getPreviewData(),c=juicer("#show-content",b);$("#content").html(c)}else $("#content").html('<p class="text-center">没有数据不能预览！</p>')});

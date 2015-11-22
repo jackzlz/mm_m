@@ -1,0 +1,38 @@
+<!-- 素材管理编辑表单 -->
+{@if id != null}
+<input type="hidden" name="id" value="!{id}" />
+{@/if}
+<div class="form-group">
+	<label for="title">标题</label> <input type="text" class="form-control" id="title" name="title" placeholder="输入标题"
+		value="!{title}">
+</div>
+<div class="form-group">
+	<label for="author">作者（选填）</label> <input type="text" class="form-control" id="author" name="author" placeholder="输入作者"
+		value="!{author}">
+</div>
+<div class="form-group">
+	<label for="cover">封面</label>
+	<p>
+		<button type="button" class="btn btn-primary" id="selectCover">选择图片</button>
+	</p>
+	<div id="coverDiv">
+		{@if cover != null} <img id="cover" alt="封面" class="img-thumbnail"
+			src="/liontech/webApps/datastore/openSource.ds?uuid=!{cover}&accesspointtype=standardweb"
+			style="width: 268px; height: 268px;" data-id="!{cover}"> {@/if} <input type="hidden" name="cover"
+			value="!{cover}" />
+	</div>
+</div>
+<div class="form-group">
+	<label for="abstracts">摘要</label>
+	<textarea class="form-control" rows="3" id="abstracts" style="resize: none" name="abstracts">!{abstracts}</textarea>
+</div>
+<div class="row">
+	<div class="col-xs-2 protpl"></div>
+	<div class="col-xs-10">
+		<label for="content">正文</label>
+		<div class="container content">
+			<input type="hidden" name="content" />
+			<div id="js_editor" class="edui_editor_wrp"></div>
+		</div>
+	</div>
+</div>

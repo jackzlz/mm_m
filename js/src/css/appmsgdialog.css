@@ -1,0 +1,139 @@
+/**
+ * 创建于:2015-05-27<br>
+ * 版权所有(C) 2015 欧姆软件<br>
+ * 针对第三方样式进行细节上的修饰的css
+ * @author chender
+ * 
+ */
+.ui-popup.ui-popup-modal[aria-labelledby*="selectAppmsg"] {
+	width: 90%;
+	height: 100%;
+	bottom: 0px;
+	min-width: 800px;
+}
+.appmsgdg.ui-dialog, .appmsgdg .ui-dialog-grid, .appmsgdg .ui-dialog-content
+	{
+	width: 100%;
+	height: 100%;
+}
+.appmsgdg .ui-dialog-grid>tbody>tr:first-child {
+	height: 40px;
+}
+.appmsgdg .ui-dialog-grid>tbody>tr:nth-child(2) {
+	position: absolute;
+	top: 40px;
+	bottom: 0px;
+	width: 100%;
+}
+.appmsgdg .ui-dialog-grid>tbody>tr:nth-child(2)>td {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+.appmsgdg-bd {
+	height: 100%;
+	border-left: none;
+	border-right: none;
+}
+.appmsgdg-hd {
+	height: 47px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+}
+.appmsgdg-hd .appmsgsearch {
+	width: 65%;
+}
+.appmsgdg-hd .appmsgcreate {
+	font-size: 16px;
+	font-weight: bold;
+}
+.appmsgdg-main {
+	position: absolute;
+	top: 48px;
+	bottom: 40px;
+	width: 100%;
+	padding: 10px !important;
+	overflow-y:auto;
+}
+.appmsg-item {
+	min-width: 180px;
+}
+.appmsg-item-bd {
+	position: relative;
+	cursor: pointer;
+}
+.appmsg-item-bd .appmsg-title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.appmsg-item-bd .appmsg-thumb-wrp {
+	height: 180px;
+	overflow: hidden
+}
+.appmsg-item-bd .appmsg-desc {
+	height: 45px;
+	padding: 5px 0 5px;
+	overflow: hidden;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.appmsg-item.selected .selected-mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.appmsg-item.selected .appmsg-mask {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	filter: alpha(opacity = 60);
+	-moz-opacity: .6;
+	-khtml-opacity: .6;
+	opacity: .6;
+	z-index: 1;
+}
+.appmsg-item .icon-card-selected {
+	display: none;
+}
+.appmsg-item.selected .icon-card-selected {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -23px;
+	margin-left: -23px;
+	line-height: 999em;
+	overflow: hidden;
+	z-index: 1;
+	background: url("/liontech/webApps/manager/img/base_z.png") 0 -6085px no-repeat;
+	width: 46px;
+	height: 46px;
+	vertical-align: middle;
+}
+.appmsgdg-ft {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	height:47px;
+}
+.appmsgdg-ft-btn {
+	position: absolute;
+	top: 6px;
+	right: 12px;
+	width: 230px;
+}
+.appmsgdg-ft-btn>button{
+	width: 110px;
+}

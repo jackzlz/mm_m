@@ -1,0 +1,98 @@
+/*图片选择对话框样式*/
+.imgdg-bd {
+	border: none;
+  	border-bottom: 1px solid #ddd;
+  	margin-bottom: 0;
+  	border-radius: 0;
+}
+.imgdg-hd .progress-box {
+	background-color: #fff;
+	display: none;
+	width: 248px;
+	height: 42px;
+	position: absolute;
+	top: 43px;
+	right: 15px;
+	border: 1px solid #e7e7eb;
+	z-index: 1;
+	padding: 15px 20px;
+}
+.imgdg-hd .progress-box .progress {
+	width: 200px;
+	height: 10px;
+}
+.imgdg-hd .filepicker {
+	display: inline-block;
+	line-height: 1.428571429;
+	vertical-align: middle;
+}
+.imgdg-main{
+	width:762px;
+	height:349px;
+	overflow:auto;
+	padding:15px 15px 0 15px;
+}
+.img-list .img-item{
+	padding-right: 4px;
+	padding-left: 4px;
+}
+.img-item .img-item-bd{
+	cursor: pointer;
+	padding: 0;
+	border-radius: 0;
+	margin-bottom:15px;
+}
+.img-item .img-item-bd .pic{
+	border-bottom: 1px solid #e7e7eb;
+	width: 117px;
+	height: 118px;
+}
+.img-item .img-item-bd .imgname{
+	display: block;
+	overflow: hidden;
+	line-height: 32px;
+	height: 32px;
+	padding: 0 14px;
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.img-item.selected .selected-mask {
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	width:117px;
+	height:118px;
+	cursor: pointer;
+}
+.img-item.selected .selected-mask-inner {
+	width: 100%;
+	height: 100%;
+	-moz-opacity: .6;
+	-khtml-opacity: .6;
+	opacity: .6;
+	background-color: #000;
+	filter: alpha(opacity = 60);
+}
+.img-item.selected .selected-mask-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent url(/liontech/webApps/manager/img/icon_card_selected.png) no-repeat 0 0;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	background-position: 50% 50%;
+}
+.img-item .img-item-bd .delete{
+	background: transparent url(/liontech/webApps/manager/img/close.png) no-repeat 0 0;
+  	position: absolute;
+  	top: 1px;
+  	right: 5px;
+ 	width: 16px;
+  	height: 16px;
+}
+.imgdg-ft{
+	padding-top: 6px;
+  	padding-bottom: 6px;
+}

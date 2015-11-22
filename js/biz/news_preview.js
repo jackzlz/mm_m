@@ -1,0 +1,1 @@
+define("biz/news_preview",[],function(a){var b=item;if(b&&b.title||"undefined"!=typeof getPreviewData&&(b=getPreviewData()),b&&b.title){var c=juicer("#show-content",b);$("#content").html(c)}else $("#content").html('<p class="text-center">没有数据不能预览！</p>')});

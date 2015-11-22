@@ -1,0 +1,12 @@
+{@if data.length == 0}
+<p class="text-warning">
+	当前没有可供选择的模板！请在<span class="text-primary">产品模板管理</span>中维护模板。
+</p>
+{@else} {@each data as tpl,index}
+<div class="col-xs-12 tplitem{@if tpl.selected} selected{@/if}">
+	<div class="thumbnail" data-id="!{tpl.id}">
+		<div class="tplcontent">!!{tpl.content}</div>
+		<h4 class="tpltitle">!{tpl.title}</h4>
+	</div>
+</div>
+{@/each} {@/if}
